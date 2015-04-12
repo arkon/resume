@@ -39,23 +39,45 @@ h2 {
 
 /* Resume */
 
-#resume {
+#container {
   background: #fff;
   height: 11in;
   margin: 0 auto;
   width: 8.5in;
 }
 
+#resume {
+  display: table;
+}
+
   #resume-header {
+    display: table-row;
   }
+
+    #resume-header-card,
+    #resume-header-about {
+      display: table-cell;
+      vertical-align: top;
+    }
 
     #resume-header-card {
       background-color: $brand;
       font-family: 'Roboto Condensed';
       text-transform: uppercase;
       padding: 1.5em 2.5em;
+      width: 2in;
     }
 
     #resume-header-about {
 
+    }
+
+  #resume-content {
+    display: table-row;
+  }
+
+    #resume-sidebar,
+    #resume-experience {
+      display: table-cell;
+      vertical-align: top;
     }
