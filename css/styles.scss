@@ -27,26 +27,34 @@ body {
   width: 100%;
 }
 
+@media print {
+  body {
+    background-color: #fff;
+    padding: 0 !important;
+  }
+}
+
 h1 {
   font: 300 2.25em/1.5em 'Roboto Condensed', Helvetica, Arial, sans-serif;
   text-transform: uppercase;
 }
 
 h2 {
-  font: 1.75em/1.5em 'Roboto Slab', 'Times New Roman', serif;
+  font: 1.5em/1.5em 'Roboto Slab', 'Times New Roman', serif;
+  margin-bottom: 0.2em;
   text-transform: uppercase;
 }
 
 h3 {
-  font-size: 1.25em;
+  font-size: 1em;
   font-weight: 400;
-  margin-bottom: 0.25em;
+  margin-bottom: 0.2em;
 }
 
 h4 {
   color: $dark-grey;
   font: 300 1em/1.5em 'Roboto Condensed', Helvetica, Arial, sans-serif;
-  margin-bottom: 0.25em;
+  margin-bottom: 0.2em;
 }
 
 a {
@@ -66,6 +74,7 @@ li {
   background: #fff;
   height: 11in;
   margin: 0 auto;
+  overflow: hidden;
   width: 8.5in;
 }
 
@@ -87,9 +96,9 @@ li {
     background-color: $brand;
     color: #fff;
     font-family: 'Roboto Condensed';
-    margin: -1.5em 0 1em -1.5em ;
+    margin: -1.5em 2em 2em -1.5em ;
     padding: 1.5em 2.25em;
-    width: 3.75in;
+    width: 3.5in;
 
     h2,
     a {
@@ -108,7 +117,7 @@ li {
   }
 
     #about-links {
-      margin-top: 0.5em;
+      margin-top: 1em;
 
       li {
         margin: 0;
@@ -117,6 +126,10 @@ li {
       span {
         display: inline-block;
         width: 80px;
+      }
+
+      a {
+        color: #000;
       }
     }
 
@@ -127,12 +140,12 @@ li {
   }
 
   #resume-sidebar {
-    padding-right: 0.5em;
+    padding-right: 1em;
     width: 3.25in;
   }
 
   #resume-experience {
-    padding-left: 0.5em;
+    padding-left: 1em;
 
     a {
       color: $dark-grey;
