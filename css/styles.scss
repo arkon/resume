@@ -1,4 +1,4 @@
-$brand: #2284fe;
+$brand: #69b6d1;
 $dark-grey: #444;
 
 /* Core styling */
@@ -28,7 +28,7 @@ body {
 }
 
 h1 {
-  font: 2.25em/1.5em 'Roboto Condensed', Helvetica, Arial, sans-serif;
+  font: 300 2.25em/1.5em 'Roboto Condensed', Helvetica, Arial, sans-serif;
   text-transform: uppercase;
 }
 
@@ -38,14 +38,14 @@ h2 {
 }
 
 h3 {
-  font-size: 1.4em;
+  font-size: 1.25em;
   font-weight: 400;
   margin-bottom: 0.25em;
 }
 
 h4 {
   color: $dark-grey;
-  font: 1em/1.5em 'Roboto Condensed', Helvetica, Arial, sans-serif;
+  font: 300 1em/1.5em 'Roboto Condensed', Helvetica, Arial, sans-serif;
   margin-bottom: 0.25em;
 }
 
@@ -56,6 +56,7 @@ a {
 
 li {
   list-style: none;
+  margin: 0.5em 0;
 }
 
 
@@ -71,7 +72,7 @@ li {
 #resume {
   display: table;
   table-layout: fixed;
-  padding: 3em;
+  padding: 5em 3em;
 
   h2 {
     color: $brand;
@@ -87,14 +88,37 @@ li {
     color: #fff;
     font-family: 'Roboto Condensed';
     margin: -1.5em 0 1em -1.5em ;
-    padding: 1.25em 2.25em;
+    padding: 1.5em 2.25em;
     width: 3.75in;
 
     h2,
     a {
+      font-family: 'Roboto Slab', 'Times New Roman', serif;
       color: #fff;
     }
+
+    h2 {
+      font-size: 1em;
+      margin: 1em 0;
+    }
+
+    a {
+      font-size: 0.9em;
+    }
   }
+
+    #about-links {
+      margin-top: 0.5em;
+
+      li {
+        margin: 0;
+      }
+
+      span {
+        display: inline-block;
+        width: 80px;
+      }
+    }
 
   #resume-sidebar,
   #resume-experience {
@@ -110,12 +134,12 @@ li {
   #resume-experience {
     padding-left: 0.5em;
 
-    li + li {
-      margin-top: 1em;
-    }
-
     a {
       color: $dark-grey;
       font-family: 'Roboto Condensed';
+    }
+
+    li + li {
+      margin-top: 1.25em;
     }
   }
