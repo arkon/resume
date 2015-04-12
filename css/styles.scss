@@ -1,0 +1,61 @@
+$brand: #f00;
+
+/* Core styling */
+
+html { box-sizing: border-box; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+::selection {
+  background-color: $brand;
+}
+
+html, body { height: 100%; }
+
+body {
+  background-color: #444;
+  display: table;
+  font: 400 16px/1.5em Roboto, Helvetica, Arial, sans-serif;
+  padding: 2em;
+  width: 100%;
+}
+
+h1 {
+  font: 2em/1.5em 'Roboto Condensed', Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+h2 {
+  font: 1.5em/1.5em 'Roboto Slab', 'Times New Roman', serif;
+  text-transform: uppercase;
+}
+
+
+/* Resume */
+
+#resume {
+  background: #fff;
+  height: 11in;
+  margin: 0 auto;
+  width: 8.5in;
+}
+
+  #resume-header {
+  }
+
+    #resume-header-card {
+      background-color: $brand;
+      font-family: 'Roboto Condensed';
+      text-transform: uppercase;
+      padding: 1.5em 2.5em;
+    }
+
+    #resume-header-about {
+
+    }

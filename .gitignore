@@ -1,0 +1,17 @@
+# Generated build files
+/build
+
+# Temporary files
+/.tmp
+
+# node dependencies
+node_modules
+
+# ignore specific dotfolders and dotfiles
+.sass-cache
+
+# ignore npm log
+npm-debug.log
+
+# Windows
+Thumbs.db
