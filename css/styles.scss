@@ -1,4 +1,4 @@
-$brand: #69b6d1;
+$brand: #7eb4a7;
 $dark-grey: #444;
 
 /* Core styling */
@@ -22,7 +22,7 @@ html, body { height: 100%; }
 body {
   background-color: #444;
   display: table;
-  font: 400 14px/1.5em Roboto, Helvetica, Arial, sans-serif;
+  font: 400 15px/1.5 'Inconsolata', 'Consolas', sans-serif;
   padding: 2em;
   width: 100%;
 }
@@ -34,26 +34,37 @@ body {
   }
 }
 
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Dosis', 'Impact', sans-serif;
+  font-weight: 300;
+}
+
 h1 {
-  font: 300 2.25em/1.5em 'Roboto Condensed', Helvetica, Arial, sans-serif;
+  font-size: 2.25em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
 }
 
 h2 {
-  font: 1.5em/1.5em 'Roboto Slab', 'Times New Roman', serif;
-  margin-bottom: 0.2em;
+  border-bottom: 1px dashed $brand;
+  font-size: 1.5em;
+  margin-bottom: 0.3em;
+  padding-bottom: 0.3em;
   text-transform: uppercase;
 }
 
 h3 {
-  font-size: 1em;
-  font-weight: 400;
+  font-size: 1.2em;
+  letter-spacing: 1px;
   margin-bottom: 0.2em;
 }
 
 h4 {
   color: $dark-grey;
-  font: 300 1em/1.5em 'Roboto Condensed', Helvetica, Arial, sans-serif;
+  font-size: 1em;
   margin-bottom: 0.2em;
 }
 
@@ -95,24 +106,19 @@ li {
   #resume-header-card {
     background-color: $brand;
     color: #fff;
-    font-family: 'Roboto Condensed';
-    margin: -1.5em 2em 2em -1.5em ;
+    font-family: 'Dosis';
+    margin: -1.5em 2em 2em -1.5em;
     padding: 1.5em 2.25em;
     width: 3.5in;
 
     h2,
     a {
-      font-family: 'Roboto Slab', 'Times New Roman', serif;
       color: #fff;
     }
 
     h2 {
       font-size: 1em;
-      margin: 1em 0;
-    }
-
-    a {
-      font-size: 0.9em;
+      margin: 0.8em 0;
     }
   }
 
@@ -149,7 +155,6 @@ li {
 
     a {
       color: $dark-grey;
-      font-family: 'Roboto Condensed';
     }
 
     li + li {
