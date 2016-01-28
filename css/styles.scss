@@ -22,7 +22,7 @@ html, body { height: 100%; }
 body {
   background-color: $dark-grey;
   display: table;
-  font: 400 15px/1.5 'Inconsolata', 'Consolas', sans-serif;
+  font: 400 15px/1.5 'Inconsolata', 'Consolas', monospace;
   padding: 2em;
   width: 100%;
 }
@@ -58,7 +58,7 @@ h2 {
 
 h3 {
   font-size: 1.2em;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
   margin-bottom: 0.2em;
 }
 
@@ -152,6 +152,10 @@ li {
 
   #resume-experience {
     padding-left: 1em;
+
+    h3 a {
+      font-size: 0.95rem;
+    }
 
     a {
       color: $dark-grey;
