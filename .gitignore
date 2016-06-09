@@ -1,5 +1,4 @@
-# ignore specific dotfolders and dotfiles
 .sass-cache
-
-# Windows
-Thumbs.db
+node_modules
+*.log
+*.css

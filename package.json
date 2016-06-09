@@ -1,0 +1,19 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "Personal resume.",
+  "author": "Eugene Cheung",
+  "scripts": {
+    "sass": "node-sass src/css/styles.scss src/css/styles.css --output-style compressed",
+    "build": "npm run sass && inliner -i --skip-absolute-urls src/index.html > index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arkon/resume.git"
+  },
+  "homepage": "https://github.com/arkon/resume",
+  "devDependencies": {
+    "inliner": "^1.9.2",
+    "node-sass": "^3.7.0"
+  }
+}
