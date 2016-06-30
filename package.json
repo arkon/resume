@@ -9,8 +9,8 @@
   },
   "homepage": "https://github.com/arkon/resume",
   "scripts": {
-    "sass": "node-sass --output-style compressed src/css/styles.scss src/css/styles.css",
-    "sass:watch": "node-sass -w src/css/styles.scss src/css/styles.css",
+    "sass": "node-sass --output-style compressed src/scss/styles.scss src/styles.css",
+    "sass:watch": "node-sass -w src/scss/styles.scss src/styles.css",
     "build": "npm run sass && inliner -i --skip-absolute-urls src/index.html > index.html"
   },
   "devDependencies": {
