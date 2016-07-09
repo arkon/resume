@@ -1,84 +1,103 @@
+// Containers
+
 .page {
   background: $white;
   height: 11in;
   margin: 0 auto;
-  overflow: hidden;
+  // overflow: hidden;
   width: 8.5in;
 }
 
-#resume {
-  display: table;
-  table-layout: fixed;
-  padding: 5em 3em;
-
-  h2 {
-    color: $brand;
-  }
+.resume {
+  padding: 1.5em;
 
   ul + h2 {
     margin-top: 1em;
   }
 }
 
-  #resume-header-card {
-    background-color: $brand;
-    color: $white;
-    font-family: 'Dosis';
-    margin: -1.5em 2em 2em -1.5em;
-    padding: 1.5em 2.25em;
-    width: 3.5in;
 
-    h2,
-    a {
+// Header
+
+.resume__header {
+  align-items: center;
+  background-color: $brand;
+  border: 1px solid $brand;
+  color: $white;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5em;
+  padding: 1.5em 2em;
+}
+
+  .resume__header__name {
+    font-size: 2.5rem;
+  }
+
+  .resume__header__tagline {
+    border-bottom: 0;
+    font-size: 1.2em;
+    margin-bottom: 0;
+    margin-top: 0.5em;
+    padding: 0;
+  }
+
+  .resume__header__info {
+    text-align: right;
+  }
+
+    .resume__header__info__link {
       color: $white;
+      display: block;
+      padding: 0.25em 0;
     }
 
-    h2 {
-      font-size: 1em;
-      margin: 0.8em 0;
-    }
+
+// Sidebar
+
+#about-links {
+  margin-top: 1em;
+
+  li {
+    margin: 0;
   }
 
-    #about-links {
-      margin-top: 1em;
-
-      li {
-        margin: 0;
-      }
-
-      span {
-        display: inline-block;
-        width: 80px;
-      }
-
-      a {
-        color: $black;
-      }
-    }
-
-  #resume-sidebar,
-  #resume-experience {
-    display: table-cell;
-    vertical-align: top;
+  span {
+    display: inline-block;
+    width: 80px;
   }
 
-  #resume-sidebar {
-    padding-right: 1em;
-    width: 3.25in;
+  a {
+    color: $black;
+  }
+}
+
+#resume-sidebar,
+#resume-experience {
+  display: table-cell;
+  vertical-align: top;
+}
+
+#resume-sidebar {
+  padding-right: 1em;
+  width: 3.25in;
+}
+
+
+// Experience
+
+#resume-experience {
+  padding-left: 1em;
+
+  h3 a {
+    font-size: 0.95rem;
   }
 
-  #resume-experience {
-    padding-left: 1em;
-
-    h3 a {
-      font-size: 0.95rem;
-    }
-
-    a {
-      color: $dark-grey;
-    }
-
-    li + li {
-      margin-top: 1.25em;
-    }
+  a {
+    color: $dark-grey;
   }
+
+  li + li {
+    margin-top: 1.25em;
+  }
+}
