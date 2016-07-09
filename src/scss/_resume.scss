@@ -35,11 +35,8 @@
   }
 
   .resume__header__tagline {
-    border-bottom: 0;
     font-size: 1.2em;
-    margin-bottom: 0;
     margin-top: 0.5em;
-    padding: 0;
   }
 
   .resume__header__info {
@@ -53,6 +50,21 @@
     }
 
 
+// Content
+
+.resume__content {
+  display: table;
+  table-layout: fixed;
+  padding: 0 2em;
+}
+
+  .resume__content__heading {
+    color: $brand;
+    border-bottom: 1px dashed $brand;
+    margin-bottom: 0.3em;
+    padding-bottom: 0.3em;
+  }
+
 // Sidebar
 
 #about-links {
@@ -65,10 +77,6 @@
   span {
     display: inline-block;
     width: 80px;
-  }
-
-  a {
-    color: $black;
   }
 }
 
@@ -91,10 +99,6 @@
 
   h3 a {
     font-size: 0.95rem;
-  }
-
-  a {
-    color: $dark-grey;
   }
 
   li + li {
