@@ -60,19 +60,15 @@
 
   .resume__content__heading {
     color: $brand;
-    border-bottom: 1px dashed $brand;
-    margin-bottom: 0.3em;
+    border-bottom: 1px dashed $light-grey;
+    margin-bottom: 0.5em;
     padding-bottom: 0.3em;
   }
 
 // Sidebar
 
-#about-links {
-  margin-top: 1em;
-
-  li {
-    margin: 0;
-  }
+.resume__about__links {
+  margin: 1em 0;
 
   span {
     display: inline-block;
@@ -96,10 +92,6 @@
 
 #resume-experience {
   padding-left: 1em;
-
-  h3 a {
-    font-size: 0.95rem;
-  }
 
   li + li {
     margin-top: 1.25em;

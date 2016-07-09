@@ -6,15 +6,11 @@
 
 ::selection {
   background-color: $brand;
-}
-
-html,
-body {
-  height: 100%;
+  color: $white;
 }
 
 body {
-  background-color: $dark-grey;
+  background-color: $background;
   font: 400 15px/1.5 'Inconsolata', 'Consolas', monospace;
   padding: 2em;
   width: 100%;
@@ -57,7 +53,7 @@ h4 {
 }
 
 a {
-  color: $brand;
+  color: $black;
   text-decoration: none;
 }
 
