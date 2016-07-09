@@ -1,9 +1,5 @@
-/* Core styling */
-
-html { box-sizing: border-box; }
-
 * {
-  box-sizing: inherit;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -12,20 +8,20 @@ html { box-sizing: border-box; }
   background-color: $brand;
 }
 
-html, body { height: 100%; }
+html,
+body {
+  height: 100%;
+}
 
 body {
   background-color: $dark-grey;
-  display: table;
   font: 400 15px/1.5 'Inconsolata', 'Consolas', monospace;
   padding: 2em;
   width: 100%;
-}
 
-@media print {
-  body {
+  @media print {
     background-color: $white;
-    padding: 0 !important;
+    padding: 0;
   }
 }
 
