@@ -58,6 +58,12 @@
   padding: 0 2em;
 }
 
+  .resume__content__sidebar,
+  .resume__content__experience {
+    display: table-cell;
+    vertical-align: top;
+  }
+
   .resume__content__heading {
     color: $brand;
     border-bottom: 1px dashed $light-grey;
@@ -76,21 +82,15 @@
   }
 }
 
-#resume-sidebar,
-#resume-experience {
-  display: table-cell;
-  vertical-align: top;
-}
-
-#resume-sidebar {
+.resume__content__sidebar {
   padding-right: 1em;
-  width: 3.25in;
+  width: 3in;
 }
 
 
 // Experience
 
-#resume-experience {
+.resume__content__experience {
   padding-left: 1em;
 
   li + li {
