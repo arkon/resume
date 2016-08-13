@@ -73,6 +73,11 @@
 
 // Sidebar
 
+.resume__content__sidebar {
+  padding-right: 1em;
+  width: 3.25in;
+}
+
 .resume__about__links {
   margin: 1em 0;
 
@@ -80,11 +85,6 @@
     display: inline-block;
     width: 80px;
   }
-}
-
-.resume__content__sidebar {
-  padding-right: 1em;
-  width: 3in;
 }
 
 
