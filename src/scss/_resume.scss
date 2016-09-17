@@ -4,7 +4,6 @@
   background: $white;
   height: 11in;
   margin: 0 auto;
-  // overflow: hidden;
   width: 8.5in;
 }
 
@@ -27,7 +26,7 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 1.5em;
-  padding: 1.5em 2em;
+  padding: 1.25em 2em;
 }
 
   .resume__header__name {
@@ -76,14 +75,9 @@
 .resume__content__sidebar {
   padding-right: 1em;
   width: 3.25in;
-}
 
-.resume__about__links {
-  margin: 1em 0;
-
-  span {
-    display: inline-block;
-    width: 80px;
+  p {
+    margin-bottom: 1em;
   }
 }
 
