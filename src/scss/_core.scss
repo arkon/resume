@@ -10,7 +10,7 @@
 }
 
 body {
-  background-color: $background;
+  background-color: $dark-grey;
   font: 400 15px/1.5 'Inconsolata', 'Consolas', monospace;
   padding: 2em;
   width: 100%;
@@ -41,9 +41,9 @@ h2 {
 }
 
 h3 {
-  font-size: 1.2em;
+  font-size: 1.25em;
   letter-spacing: 0.5px;
-  margin-bottom: 0.2em;
+  margin-bottom: 0.15em;
 }
 
 h4 {
