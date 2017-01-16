@@ -31,7 +31,7 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 1.5em;
-  padding: 1.25em 2em;
+  padding: 1.25em 1.5em;
 }
 
   .resume__header__name {
@@ -59,7 +59,7 @@
 .resume__content {
   display: table;
   table-layout: fixed;
-  padding: 0 2em;
+  padding: 0 1.5em;
 }
 
   .resume__content__sidebar,
@@ -79,7 +79,7 @@
 
 .resume__content__sidebar {
   padding-right: 1em;
-  width: 3.25in;
+  width: 3in;
 
   p {
     margin-bottom: 1em;
