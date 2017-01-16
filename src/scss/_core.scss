@@ -9,11 +9,10 @@
   color: $white;
 }
 
-body {
+html {
   background-color: $dark-grey;
   font: 400 15px/1.5 $fonts-mono;
   padding: 2em;
-  width: 100%;
 
   @media print {
     background-color: $white;
@@ -25,22 +24,24 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: $fonts-sans;
   font-weight: 300;
 }
 
 h1 {
+  font-family: $fonts-sans;
   font-size: 2.25em;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
 
 h2 {
+  font-family: $fonts-sans;
   font-size: 1.5em;
   text-transform: uppercase;
 }
 
 h3 {
+  font-family: $fonts-sans;
   font-size: 1.25em;
   letter-spacing: 0.5px;
   margin-bottom: 0.15em;
@@ -49,6 +50,8 @@ h3 {
 h4 {
   color: $dark-grey;
   font-size: 1em;
+  font-style: italic;
+  letter-spacing: -0.02em;
   margin-bottom: 0.2em;
 }
 

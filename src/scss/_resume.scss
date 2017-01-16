@@ -1,6 +1,6 @@
 // Containers
 
-.page {
+body {
   background: $white;
   box-shadow: 0 0 1.5em $black, 0 0.5em 3em rgba($black, 0.75);
   height: 11in;
@@ -71,7 +71,7 @@
   .resume__content__heading {
     color: $brand;
     border-bottom: 1px dashed $light-grey;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.4em;
     padding-bottom: 0.3em;
   }
 
