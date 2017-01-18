@@ -32,6 +32,20 @@ body {
   justify-content: space-between;
   margin-bottom: 1.5em;
   padding: 1.25em 1.5em;
+  position: relative;
+
+  &::before {
+    border: 0.5em solid $white;
+    border-left-color: transparent;
+    border-top-color: transparent;
+    bottom: -2px;
+    content: '';
+    display: block;
+    height: 0;
+    position: absolute;
+    right: -2px;
+    width: 0;
+  }
 }
 
   .resume__header__name {
@@ -40,7 +54,7 @@ body {
 
   .resume__header__tagline {
     font-size: 1.2em;
-    margin-top: 0.5em;
+    margin-top: 0.25em;
   }
 
   .resume__header__info {
@@ -58,8 +72,8 @@ body {
 
 .resume__content {
   display: table;
-  table-layout: fixed;
   padding: 0 1.5em;
+  table-layout: fixed;
 }
 
   .resume__content__sidebar,
@@ -69,8 +83,8 @@ body {
   }
 
   .resume__content__heading {
+    border-bottom: 1px solid $light-grey;
     color: $brand;
-    border-bottom: 1px dashed $light-grey;
     margin-bottom: 0.4em;
     padding-bottom: 0.3em;
   }
