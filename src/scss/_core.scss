@@ -56,8 +56,13 @@ h4 {
 }
 
 a {
+  border-bottom: 1px dotted $brand;
   color: $black;
   text-decoration: none;
+
+  @media print {
+    border-bottom: none;
+  }
 }
 
 li {
