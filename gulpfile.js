@@ -11,8 +11,8 @@ var PATHS = {
   build: './build/'
 };
 
-gulp.task('clean', function() {
-  return del(PATHS.build);
+gulp.task('clean', function(cb) {
+  return del(PATHS.build, cb);
 });
 
 gulp.task('sass', function() {
@@ -26,7 +26,9 @@ gulp.task('copy-html', function() {
       .pipe(gulp.dest(PATHS.build));
 })
 
-gulp.task('build', ['clean', 'sass', 'copy-html']);
+gulp.task('build', ['clean'], function() {
+  return gulp.run(['sass', 'copy-html']);
+});
 
 gulp.task('watch', ['build'], function() {
   gulp.watch([PATHS.html, PATHS.styles], ['build']);
