@@ -1,40 +1,31 @@
 'use strict';
 
-var gulp = require('gulp');
-var del = require('del');
-var ghPages = require('gulp-gh-pages');
-var sass = require('gulp-sass');
+const gulp    = require('gulp');
+const del     = require('del');
+const ghPages = require('gulp-gh-pages');
+const sass    = require('gulp-sass');
 
-var PATHS = {
-  html: './src/index.html',
-  styles: './src/styles/**/*.scss',
-  build: './build/'
+const PATHS = {
+  html   : './src/index.html',
+  styles : './src/styles/**/*.scss',
+  build  : './build/'
 };
 
-gulp.task('clean', function(cb) {
-  return del(PATHS.build, cb);
-});
+gulp.task('clean', () => del(PATHS.build, { force: true }));
 
-gulp.task('sass', function() {
-  return gulp.src(PATHS.styles)
+gulp.task('sass', () =>
+  gulp.src(PATHS.styles)
     .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
-    .pipe(gulp.dest(PATHS.build));
-});
+    .pipe(gulp.dest(PATHS.build)));
 
-gulp.task('copy-html', function() {
-   return gulp.src(PATHS.html)
-      .pipe(gulp.dest(PATHS.build));
-})
+gulp.task('copy-html', () =>
+   gulp.src(PATHS.html)
+      .pipe(gulp.dest(PATHS.build)));
 
-gulp.task('build', ['clean'], function() {
-  return gulp.run(['sass', 'copy-html']);
-});
+gulp.task('build', gulp.series('clean', gulp.parallel('sass', 'copy-html')));
 
-gulp.task('watch', ['build'], function() {
-  gulp.watch([PATHS.html, PATHS.styles], ['build']);
-});
+gulp.task('watch', gulp.series('build', () => gulp.watch([PATHS.html, PATHS.styles], gulp.series('build'))));
 
-gulp.task('deploy', ['build'], function() {
-  return gulp.src(PATHS.build + '**/*')
-    .pipe(ghPages());
-});
+gulp.task('deploy', gulp.series('build', () =>
+  gulp.src(PATHS.build + '**/*')
+    .pipe(ghPages())));
